@@ -1,0 +1,50 @@
+*{box-sizing:border-box}body{margin:0;background:#f2f6fa;color:#243b53;font:16px/1.6 Arial,sans-serif}header{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#102a43;color:white}.logo{font-size:1.3rem;font-weight:bold;color:white;text-decoration:none}nav{display:flex;gap:22px}nav a{color:white;text-decoration:none;font-weight:bold}nav a:hover{color:#7dd3fc}.hero{max-width:1050px;min-height:70vh;margin:auto;padding:60px 25px;display:grid;grid-template-columns:1.4fr .7fr;gap:45px;align-items:center}.hero h1{font-size:2.7rem;color:#102a43}.hero h1 span{color:#1769aa}.hero-photo{width:250px;height:300px;object-fit:cover;object-position:center 25%;border:7px solid white;border-radius:16px;box-shadow:0 10px 30px #102a4325}.tag{color:#1769aa;font-weight:bold;letter-spacing:1.5px;font-size:.8rem}.btn{display:inline-block;background:#1769aa;color:white;text-decoration:none;padding:11px 18px;border:0;border-radius:7px;margin:10px 8px 0 0;cursor:pointer}.btn.light{background:white;color:#1769aa;border:1px solid #1769aa}.page{max-width:900px;margin:40px auto;padding:0 20px}.panel{background:white;padding:24px 28px;margin:18px 0;border:1px solid #d9e2ec;border-radius:12px;box-shadow:0 6px 20px #102a430c}.panel h2{color:#1769aa;border-bottom:2px solid #e8f4fb;padding-bottom:8px}.profile{display:flex;align-items:center;gap:25px}.profile img{width:140px;height:165px;object-fit:cover;object-position:center 25%;border:3px solid #e8f4fb;border-radius:10px}.profile h1{margin:5px 0;color:#102a43}.chips{display:flex;flex-wrap:wrap;gap:9px}.chips span{background:#e8f4fb;color:#102a43;padding:6px 12px;border-radius:20px;font-weight:bold}dl div{display:grid;grid-template-columns:190px 1fr;padding:8px 0;border-bottom:1px solid #d9e2ec}dt{font-weight:bold;color:#627d98}dd{margin:0}.muted{color:#627d98}footer{text-align:center;padding:22px;color:#627d98}@media(max-width:650px){header{flex-direction:column;gap:12px}nav{gap:13px}.hero{grid-template-columns:1fr;text-align:center}.hero-photo{grid-row:1;margin:auto;width:210px;height:250px}.profile{flex-direction:column;text-align:center}.page{margin:20px auto}.panel{padding:19px}dl div{grid-template-columns:1fr}}@media print{header,footer,.print{display:none}.panel{box-shadow:none;break-inside:avoid}}
+/* Formal bio-data sheet layout */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 8%;
+}
+
+.hero-text {
+    width: 55%;
+    text-align: left;
+}
+
+.hero-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.biodata-page{background:#eef2f5;color:#111;font:14px/1.45 Arial,sans-serif}
+.bio-sheet{position:relative;max-width:850px;min-height:1050px;margin:28px auto;padding:42px 48px;background:#fff;border:1px solid #999;box-shadow:0 4px 18px #102a4312}
+.bio-sheet>h1{text-align:center;font-size:23px;letter-spacing:1px;color:#111;margin:0 0 28px}
+.bio-photo{float:right;width:112px;height:132px;object-fit:cover;object-position:center 25%;border:1px solid #777;padding:3px;margin:0 0 15px 24px}
+.bio-details{padding-right:140px;min-height:185px}
+.bio-line{display:grid;grid-template-columns:155px 1fr;gap:8px;margin:4px 0;overflow-wrap:anywhere}
+.bio-line b{font-weight:700}
+.bio-line span:before{content:": ";font-weight:400}
+.bio-sheet h2{font-size:15px;color:#111;border:0;padding:0;margin:18px 0 7px}
+.bio-education{width:100%;border-collapse:collapse;font-size:13px;margin:7px 0 18px}
+.bio-education th,.bio-education td{border:1px solid #777;padding:6px 7px;text-align:left;vertical-align:top}
+.bio-education th{background:#f3f3f3}
+.bio-extra{margin-top:12px}
+.bio-extra p{display:grid;grid-template-columns:155px 1fr;gap:8px;margin:8px 0;overflow-wrap:anywhere}
+.bio-extra p span:before{content:": "}
+.bio-declaration{margin-top:25px}
+.bio-declaration p{font-weight:600}
+.bio-sign{display:flex;justify-content:space-between;margin-top:55px}
+.biodata-page footer{text-align:center}
+@media(max-width:650px){.bio-sheet{margin:12px;padding:25px 18px;min-height:0}.bio-photo{width:90px;height:110px;margin-left:12px}.bio-details{padding-right:0;min-height:205px}.bio-line,.bio-extra p{grid-template-columns:125px 1fr;font-size:12px}.bio-education{font-size:11px}.bio-education th,.bio-education td{padding:4px}}
+@media print{.biodata-page{background:white}.site-header,.biodata-page footer,.bio-sheet .print{display:none}.bio-sheet{max-width:none;min-height:0;margin:0;padding:12mm;border:1px solid #777;box-shadow:none}.bio-sheet>h1{margin-top:0}}
